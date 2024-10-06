@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --fontJakart--: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.blue {
+    color: rgb(31, 20, 187);
+    font-weight: 900;
+}
+
+body {
+    background-color: aliceblue;
+    margin-top: 50px;
+}
+
+.geral {
+    background-color: #fff;
+    width: 650px;
+    margin-top: 50px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    display: grid;
+    gap: 10px;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--fontJakart--);
+    margin-bottom: 20px;
+}
+
+.footer span {
+    padding: 2px 8px;
+    background-color: rgb(26, 26, 175);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.footer p {
+
+    justify-self: end;
+
+}
+
+.not1 img {
+    width: 60px;
+    height: 60px;
+    grid-row: span 2;
+}
+
+.not1,
+.not4 {
+    font-family: var(--fontJakart--);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 30px;
+    background-color: #eff2f8;
+    padding: 8px 20px;
+    border-radius: 6px;
+
+}
+
+.not1 p {
+    grid-column: 2;
+    /* Coloca o parágrafo na segunda coluna */
+    grid-row: 1;
+    /* Coloca o parágrafo na primeira linha da segunda coluna */
+    margin: 0;
+
+}
+
+.not1 span {
+    grid-column: 2;
+    /* Coloca o span na segunda coluna */
+    grid-row: 2;
+    /* Coloca o span na segunda linha da segunda coluna */
+    color: gray;
+    font-size: 0.9em;
+
+}
+
+
+
+.not4 img {
+    grid-row: span 2;
+    width: 60px;
+    height: 60px;
+
+}
+
+.msgbox {
+    grid-column: 2;
+    grid-row: 4/ 5;
+    font-size: 0.9rem;
+    padding: 20px;
+    background-color: #fff;
+    border: solid 1px #000;
+    margin-top: 10px;
+}
+
+.not5 {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 30px;
+    padding: 8px 20px;
+
+
+}
+
+.not5 span,
+.not5 p {
+    grid-column: 2;
+    font-family: var(--fontJakart--);
+
+}
+
+.not5 img,
+.not5 div img {
+    width: 60px;
+    height: 60px;
+    grid-row: 1 / span 2;
+}
+
+.chess {
+    grid-column: 3;
+    grid-row: 1/ span 2;
+}
+
+.read {
+    background-color: #fff;
+}
+
+.no-read {
+    background-color: #eff2f8;
+
+}
+
+.no-read p::after {
+    content: " ";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.mark {
+    cursor: pointer;
+}
